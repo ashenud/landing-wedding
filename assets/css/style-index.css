@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Lovers+Quarrel&family=Vidaloka&display=swap');
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Lovers Quarrel', cursive;
+font-family: 'Herr Von Muellerhoff', cursive;*/
+
+body {
+    background: #E1E2E1;
+}
+
+/*-- loader --*/
+.loader {
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 40px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/*-- end of loader --*/
+
+
+
+/* header */
+.header .navbar-translate {
+    margin-left: 10px;
+}
+
+.header .navbar {
+    background: #eeeeee;
+}
+
+.header .navbar .nav-content {
+    padding: 15px;
+}
+
+.header .navbar .navbar-toggler:focus {
+    background: none;
+}
+
+.header .navbar .navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    text-transform: none;
+    color: #000 !important;
+    position: relative;
+    top: -2px;
+    font-size: 60px;
+}
+
+.sidebar-collapse .navbar-collapse .navbar-nav:not(.navbar-logo) .nav-link:not(.btn),
+.header .navbar .navbar-nav .nav-link:not(.btn) {
+    color: #000 !important;
+}
+
+.sidebar-collapse .navbar .navbar-toggler-bar {
+    background: #000 !important;
+}
+
+.header .navbar .navbar-nav .nav-link p {
+    font-size: 18px;
+    text-transform: none;
+}
+
+.sidebar-collapse .navbar-collapse:before {
+    background: linear-gradient(90deg, #ededed 0%, rgba(82,77,77,0.7) 100%);
+}
+
+.carousel-area .carousel-indicators li {
+    margin-bottom: 20px;
+    background-color: #000;
+}
+
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-caption h3 {
+    color: #000;
+    margin-bottom: 80px;
+    font-size: 4rem;
+    font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+/* end of header */
+
+
+/* about */
+.about {
+    padding-top: 90px;
+    font-family: 'Vidaloka', serif;
+}
+
+h2.headding-1 {
+    border-bottom: 4px double #c9b29b;
+    color: #de675f;
+    display: inherit;
+    text-align: center;
+    font-size: 4em;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+span.hearts {
+    background: url(../img/icon-hearts.png) no-repeat center bottom;
+    display: block;
+    height: 2em;
+    position: relative;
+    z-index: 4;
+    bottom: 23px;
+}
+
+.about p {
+    border-bottom: 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    line-height: 2em;
+    font-weight: bold;
+    font-size: 2em;
+}
+/* end of about */
+
+
+
+/* our services */
+.our-services {
+    padding-top: 90px;
+    font-family: 'Vidaloka', serif;
+}
+
+.our-services p {
+    border-bottom: 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.our-services .service-cards {
+    margin-top: 25px;
+}
+
+.our-services .card {
+    margin: 0;
+    background: #F5F5F6;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.our-services .card:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.our-services .card-title {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.our-services .btn {
+    font-family: sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    background: #bbbbbb;
+    border-radius: 0;
+    color: #000;
+}
+/* end of our services */
+
+
+/* gallery */
+.gallery {
+    padding-top: 90px;
+    font-family: 'Vidaloka', serif;
+}
+
+.gallery p {
+    border-bottom: 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+  /* Portfolio Section
+--------------------------------*/
+
+.portfolio-container {
+    margin-top: 25px;
+}
+
+#portfolio #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+}
+
+#portfolio #portfolio-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+    background: #18d26e;
+    color: #fff;
+}
+
+#portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+}
+
+#portfolio .portfolio-wrap {
+    border-radius: 18px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+#portfolio .portfolio-wrap:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#portfolio .portfolio-item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-item figure {
+    border-radius: 18px;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+#portfolio .portfolio-item figure img {
+    border-radius: 18px;
+}
+
+#portfolio .portfolio-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+#portfolio .portfolio-item figure .link-preview {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    line-height: 1;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background: #bbbbbb;
+    border-radius: 50%;
+    transition: 0.2s linear;
+}
+
+#portfolio .portfolio-item figure .link-preview i {
+    top: 9px;
+    position: relative;
+    font-size: 20px;
+    color: #333;
+}
+
+#portfolio .portfolio-item figure .link-preview:hover {
+    background: #fff;
+}
+
+#portfolio .portfolio-item figure .link-preview {
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+}
+
+#portfolio .portfolio-item figure:hover .link-preview {
+    opacity: 1;
+}
+
+/* end of gallery */
+
+
+
+
+/* user-feedbacks */
+.user-feedback .reviews {
+    padding-top: 90px;
+    font-family: 'Vidaloka', serif;
+}
+
+.user-feedback .reviews p {
+    border-bottom: 0;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.review-row {
+    font-family: 'Poppins';
+    margin-top: 25px;
+}
+
+.user-review {
+    text-align: center;
+    margin: 0;
+    background: #F5F5F6;
+    height: 100%;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding-bottom: 10px;
+}
+
+.user-review h5 {
+    font-family: 'Vidaloka', serif;
+    margin-bottom: 5px;
+}
+
+.user-review p {
+    padding: 50px 10px 10px 10px;
+}
+
+.user-feedback img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin: -30px 0 20px;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.user-review p::before {
+    content: '\201d';
+    display: block;
+    font-size: 100px;
+    color: #bbbbbb;
+    font-family: sans-serif;
+}
+/* end of user-feedbacks */
+
+
+/* footer */
+.footer  {
+    margin-top: 100px;
+    padding: 0;
+    padding-top: 15px;
+    background-image: linear-gradient(#ededed,#bbbbbb);
+    color: #000;
+}
+
+.footer .com-brand {
+    width: 150px;
+    margin-bottom: 5px;
+    font-family: 'Great Vibes', cursive;
+    text-transform: none;
+    color: #000 !important;
+    font-size: 40px;
+}
+
+.footer h4 {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: justify;
+    padding-right:2px;
+}
+
+.footer .row .fab,
+.footer .row .fa {
+    padding-right: 5px;
+    font-size: 15px
+}
+
+.footer hr {
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+.footer .copy-right a {
+    color: #000;
+}
+
+.footer .copy-right a.copy-name {
+    color: #4c94aa;
+    font-weight: bold;   
+}
+
+/* end of footer */
+
+
+.text_system_1 {
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: 2px
+}
+
+.text_system_2 {
+    font-size: 65px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .footer .com-brand {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .footer .com-brand {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel-caption h3 {
+        display: none;
+    }
+    .about p {
+        font-size: 1.5em;
+    }
+    .header .navbar .navbar-brand {
+        font-size: 40px;
+    }
+    .carousel-area .carousel-indicators li {
+        margin-bottom: -10px;
+    }
+    .user-review {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .about p {
+        font-size: 15px;
+    }
+    .header .navbar .navbar-brand {
+        font-size: 30px;
+    }
+}
+
