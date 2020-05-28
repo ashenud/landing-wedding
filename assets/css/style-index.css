@@ -115,6 +115,7 @@ h2.headding-1 {
     border-bottom: 4px double #c9b29b;
     color: #de675f;
     display: inherit;
+    text-transform: uppercase;
     text-align: center;
     font-size: 4em;
     line-height: 1.2;
