@@ -1,4 +1,4 @@
-### Landing page design for a hotel
+### LANDING PAGE DESIGN FOR A WEDDING PLANNING COMPANY
 
 #### Used technologies
 
